@@ -46,12 +46,17 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-4 pt-6 text-sm text-muted-foreground">
-          <a href="mailto:qianye_poem@qq.com" className="hover:text-foreground transition-colors">
-            📧 qianye_poem@qq.com
+        <div className="flex flex-wrap gap-4 pt-6">
+          <a
+            href="/blog"
+            className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+          >
+            📝 查看博客
           </a>
-          <span>•</span>
-          <a href="https://github.com/X1aoM1ngTX" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+          <a href="mailto:qianye_poem@qq.com" className="inline-flex items-center hover:text-foreground transition-colors text-muted-foreground">
+            📧 联系我
+          </a>
+          <a href="https://github.com/X1aoM1ngTX" target="_blank" rel="noopener noreferrer" className="inline-flex items-center hover:text-foreground transition-colors text-muted-foreground">
             🔗 GitHub
           </a>
         </div>
