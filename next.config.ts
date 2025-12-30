@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
-  /* config options here */
+  // output: "export", // 已禁用静态导出，使用 Vercel 服务器部署
   typescript: {
     ignoreBuildErrors: true,
   },
