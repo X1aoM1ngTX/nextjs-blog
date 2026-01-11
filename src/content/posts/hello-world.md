@@ -92,7 +92,7 @@ npm run dev
 
 ### 图片
 
-![示例图片](/images/placeholder.png)
+![示例图片](../images/hello-world/a.png)
 
 ---
 
@@ -128,13 +128,58 @@ npm run dev
 
 [^1]: 这是脚注内容
 
-### 数学公式（如支持）
+### 数学公式
 
-$E = mc^2$
+行内公式：$E = mc^2$
 
+块级公式：
 $$
 \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
 $$
+
+### Mermaid 图表
+
+#### 流程图
+
+```mermaid
+flowchart TD
+    A[开始] --> B{判断条件}
+    B -->|是| C[执行操作A]
+    B -->|否| D[执行操作B]
+    C --> E[结束]
+    D --> E
+```
+
+#### 时序图
+
+```mermaid
+sequenceDiagram
+    participant 用户
+    participant 系统
+    participant 数据库
+    
+    用户->>系统: 发起请求
+    系统->>数据库: 查询数据
+    数据库-->>系统: 返回结果
+    系统-->>用户: 响应数据
+```
+
+#### 甘特图
+
+```mermaid
+gantt
+    title 项目进度
+    dateFormat  YYYY-MM-DD
+    section 需求分析
+    需求调研       :a1, 2025-01-01, 7d
+    需求文档       :a2, after a1, 5d
+    section 开发
+    前端开发       :b1, 2025-01-13, 14d
+    后端开发       :b2, 2025-01-13, 14d
+    section 测试
+    集成测试       :c1, after b1, 7d
+    上线部署       :c2, after c1, 2d
+```
 
 ---
 

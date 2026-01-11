@@ -10,6 +10,7 @@ import remarkMath from "remark-math";
 import rehypeHighlight from "rehype-highlight";
 import rehypeKatex from "rehype-katex";
 import rehypeRaw from "rehype-raw";
+import Mermaid from "@/components/Mermaid";
 import "highlight.js/styles/github-dark.css";
 import "katex/dist/katex.min.css";
 
@@ -96,6 +97,24 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <ReactMarkdown
               remarkPlugins={[remarkGfm, remarkMath]}
               rehypePlugins={[rehypeRaw, rehypeHighlight, rehypeKatex]}
+              components={{
+                code({ node, inline, className, children, ...props }: any) {
+                  const match = /language-(\w+)/.exec(className || "");
+                  const language = match ? match[1] : "";
+                  
+                  // 处理 mermaid 代码块
+                  if (language === "mermaid") {
+                    return <Mermaid chart={String(children).replace(/\n$/, "")} />;
+                  }
+                  
+                  // 处理普通代码块
+                  return (
+                    <code className={className} {...props}>
+                      {children}
+                    </code>
+                  );
+                },
+              }}
             >
               {post.content}
             </ReactMarkdown>
