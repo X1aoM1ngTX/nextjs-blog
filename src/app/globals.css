@@ -209,7 +209,7 @@
 }
 
 .prose img {
-  @apply rounded-lg my-4;
+  @apply rounded-lg my-4 mx-auto block;
 }
 
 /* Dark mode adjustments */

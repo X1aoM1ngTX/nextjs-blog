@@ -6,8 +6,12 @@ import { format } from "date-fns";
 import { zhCN } from "date-fns/locale";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
 import rehypeHighlight from "rehype-highlight";
+import rehypeKatex from "rehype-katex";
+import rehypeRaw from "rehype-raw";
 import "highlight.js/styles/github-dark.css";
+import "katex/dist/katex.min.css";
 
 const POSTS_DIR = path.join(process.cwd(), "src/content/posts");
 
@@ -90,8 +94,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
           <div className="prose prose-neutral dark:prose-invert max-w-none">
             <ReactMarkdown
-              remarkPlugins={[remarkGfm]}
-              rehypePlugins={[rehypeHighlight]}
+              remarkPlugins={[remarkGfm, remarkMath]}
+              rehypePlugins={[rehypeRaw, rehypeHighlight, rehypeKatex]}
             >
               {post.content}
             </ReactMarkdown>

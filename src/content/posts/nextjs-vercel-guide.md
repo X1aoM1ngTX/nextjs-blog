@@ -1,6 +1,6 @@
 ---
 title: 使用 Vercel 部署 Next.js 博客
-date: 2025-12-28
+date: 2025-12-30
 excerpt: 详细介绍如何将 Next.js 项目部署到 Vercel 平台，包括配置自定义域名。
 ---
 
@@ -60,5 +60,3 @@ git push
 Vercel 会自动检测并重新部署。
 
 ---
-
-享受愉快的写作体验！

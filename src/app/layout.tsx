@@ -4,19 +4,19 @@ import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
-  title: "个人博客 - 全栈开发者",
+  title: "小茗同学の小窝",
   description: "全栈开发者的个人博客，分享技术文章和项目经验。",
-  keywords: ["博客", "全栈开发", "Java", "Vue.js", "TypeScript"],
-  authors: [{ name: "开发者" }],
+  keywords: ["个人博客", "全栈开发", "Java", "Vue.js", "TypeScript"],
+  authors: [{ name: "X1aoM1ngTX" }],
   openGraph: {
-    title: "个人博客 - 全栈开发者",
-    description: "全栈开发者的个人博客，分享技术文章和项目经验。",
+    title: "小茗同学の小窝",
+    description: "小茗同学的个人博客，分享技术文章和项目经验。",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "个人博客 - 全栈开发者",
-    description: "全栈开发者的个人博客，分享技术文章和项目经验。",
+    title: "小茗同学の小窝",
+    description: "小茗同学的个人博客，分享技术文章和项目经验。",
   },
 };
 

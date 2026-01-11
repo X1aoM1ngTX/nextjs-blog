@@ -37,7 +37,7 @@ export function HeroSection() {
               </div>
             </div>
             <div className="flex items-center gap-3 bg-card border rounded-lg p-3 hover:shadow-md transition-shadow">
-              <img src="/project/d2d.png" alt="Draw2Draw" className="w-12 h-12 object-contain rounded-lg" />
+              <img src="/project/d2d-v2-1.png" alt="Draw2Draw" className="w-12 h-12 object-contain rounded-lg" />
               <div>
                 <div className="font-semibold">🎨 Draw2Draw</div>
                 <div className="text-sm text-muted-foreground">企业级智能协同云图库</div>
