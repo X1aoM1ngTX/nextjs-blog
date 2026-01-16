@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   description: "全栈开发者的个人博客，分享技术文章和项目经验。",
   keywords: ["个人博客", "全栈开发", "Java", "Vue.js", "TypeScript"],
   authors: [{ name: "X1aoM1ngTX" }],
+  icons: "/icon.png",
   openGraph: {
     title: "小茗同学の小窝",
     description: "小茗同学的个人博客，分享技术文章和项目经验。",

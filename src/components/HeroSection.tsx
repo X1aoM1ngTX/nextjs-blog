@@ -4,8 +4,8 @@ export function HeroSection() {
   return (
     <section className="px-4 py-20 md:py-32 max-w-4xl mx-auto">
       <div className="space-y-6">
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-          小茗同学 👋
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tight flex items-center gap-3">
+          小茗同学<img src="/icon.png" alt="小茗同学" className="inline-block w-12 h-12 md:w-16 md:h-16"/>
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground">
           全栈开发者 • Java • Vue.js • 学习爱好者 🔥
@@ -32,15 +32,15 @@ export function HeroSection() {
             <div className="flex items-center gap-3 bg-card border rounded-lg p-3 hover:shadow-md transition-shadow">
               <img src="/project/zerocode.png" alt="ZeroCode 零码" className="w-12 h-12 object-contain rounded-lg" />
               <div>
-                <div className="font-semibold">🚀 ZeroCode 零码</div>
+                <div className="font-semibold">🔷 ZeroCode 零码</div>
                 <div className="text-sm text-muted-foreground">不用手写代码的应用生成网站</div>
               </div>
             </div>
             <div className="flex items-center gap-3 bg-card border rounded-lg p-3 hover:shadow-md transition-shadow">
               <img src="/project/d2d-v2-1.png" alt="Draw2Draw" className="w-12 h-12 object-contain rounded-lg" />
               <div>
-                <div className="font-semibold">🎨 Draw2Draw</div>
-                <div className="text-sm text-muted-foreground">企业级智能协同云图库</div>
+                <div className="font-semibold">☁️ Draw2Draw</div>
+                <div className="text-sm text-muted-foreground">多人智能协同云图库</div>
               </div>
             </div>
           </div>
